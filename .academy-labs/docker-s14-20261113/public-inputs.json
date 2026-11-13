@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "purpose": "Exact registered public course Docker lab inputs; no production team/provider execution",
+  "contextFiles": [
+    {
+      "path": "context/Dockerfile",
+      "sha256": "92fe64d50abfc73f15780d33e7d5e6029945f95151aba3dee22b0ce9958a7619",
+      "bytes": 759,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    },
+    {
+      "path": "context/pyproject.toml",
+      "sha256": "0d30ab776be09dcb584defc8b5380226bb3a98dcb2ded302711a852a2d093795",
+      "bytes": 257,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    },
+    {
+      "path": "context/uv.lock",
+      "sha256": "756de2c37334e22332e81a51686a64850ec02f75e91e50f7b14e742f86d00bd4",
+      "bytes": 286277,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    },
+    {
+      "path": "context/semantic_team.py",
+      "sha256": "9c8c8fedea6e99df10e5aa6f94748fe1fa2efcd2d41fea25c5c15206012f3b29",
+      "bytes": 18613,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    },
+    {
+      "path": "context/crewai_roles.py",
+      "sha256": "6f525731c315129f786bbc06451fb10b688e2760762a4200924662667b0e8f09",
+      "bytes": 8034,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    },
+    {
+      "path": "context/container_entrypoint.py",
+      "sha256": "bff4f14f0b42f1d56bcd607f12b10ed8b070cf6f6f334a7fa72e82a41d50465f",
+      "bytes": 9699,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    },
+    {
+      "path": "context/container_launch.py",
+      "sha256": "c3b271e7f7520d58b5946578d8f9842cb92fce427d5040b9670a0b082ec2f21a",
+      "bytes": 14069,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    },
+    {
+      "path": "context/delivery_package.py",
+      "sha256": "e7a7d198f43acde5cec02b999876b6fe2601b5b88fa881e44d4034f949dcd3e4",
+      "bytes": 10030,
+      "authority": "Exact public course material snapshot; registered entrypoint/launcher/Dockerfile/lock pins retained"
+    }
+  ],
+  "pythonImage": "python@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+  "uvImage": "ghcr.io/astral-sh/uv@sha256:5cc1805e2426484abca4ad46ea783bab281fdb225fd82d8ce6d66a81254bac85",
+  "imagePinProvenance": "Previously observed public RepoDigests retained by genuine private-course runtime; this separate hosted job must pull and inspect them anew for its first image build, never substitute tags.",
+  "registeredSourceCommitMetadata": "f78699bdc96e7462964b1a0293fee463c678ded1",
+  "registeredIndexSha256": "d34d4354151f0a53452e1bcc036b8ebdb72085e5fcd9158b32b5c07a0e9d52c3",
+  "targets": [
+    {
+      "lessonId": "s14-l03",
+      "projectId": "cmwf8utho004h5c8cz7kzy983",
+      "sourceSha256": "67bb865591590b0a0d21659f8a7fadc9c78206cd069069bb9208f0d34becd65c",
+      "ordinals": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        18
+      ],
+      "excludedAlreadySuccessfulOrdinals": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "lessonId": "s14-l04",
+      "projectId": "cmwf8v4du004l5c8c5bhjdigf",
+      "sourceSha256": "bdc57f6d52f22fc2d1de4eaa4901195eb646c143727c7f0821379ae1a412c16a",
+      "ordinals": [
+        49,
+        50,
+        51
+      ],
+      "preservedAlreadySuccessfulSupporting": 58
+    }
+  ],
+  "noSecretsOrPrivateInputs": true,
+  "aiProviderCallsAllowed": 0,
+  "fullTeamWorkflowAllowed": false,
+  "semanticQAReplayAllowed": false,
+  "originalExerciseQAReplayAllowed": false
+}

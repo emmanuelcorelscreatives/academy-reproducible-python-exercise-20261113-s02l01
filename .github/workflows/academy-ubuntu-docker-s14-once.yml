@@ -1,0 +1,41 @@
+name: Academy owned Ubuntu Docker lab once
+on:
+  push:
+    branches: [academy-ubuntu-docker-s14-20261113-v1]
+    paths:
+      - '.github/workflows/academy-ubuntu-docker-s14-once.yml'
+      - '.academy-labs/docker-s14-20261113/**'
+permissions: {}
+concurrency:
+  group: academy-ubuntu-docker-s14-course-once
+  cancel-in-progress: false
+jobs:
+  owned-public-course-lab:
+    if: github.repository == 'emmanuelcorelscreatives/academy-reproducible-python-exercise-20261113-s02l01' && github.event.repository.private == false && github.ref == 'refs/heads/academy-ubuntu-docker-s14-20261113-v1' && github.run_attempt == 1
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Fetch this exact public course branch revision without credentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin https://github.com/emmanuelcorelscreatives/academy-reproducible-python-exercise-20261113-s02l01.git
+          git -c credential.helper= fetch --depth=1 origin "$GITHUB_SHA"
+          git checkout --detach FETCH_HEAD
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+      - name: One finite owned Ubuntu installation and configuration-only lab
+        shell: bash
+        env:
+          ACADEMY_JOB_LIMIT_SECONDS: '1800'
+        run: /usr/bin/python3 .academy-labs/docker-s14-20261113/run-lab.py
+      - name: Retain only public course outputs from this original run
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: academy-ubuntu-docker-s14-original-${{ github.run_id }}
+          path: lab-out/
+          if-no-files-found: error
+          retention-days: 3
+          compression-level: 6
+          include-hidden-files: false
