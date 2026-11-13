@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "purpose": "Exact fictional public course Docker image build and private-data run only",
+  "contextFiles": [
+    {
+      "path": "context/.dockerignore",
+      "sha256": "28990451e05d02ebd94b8dac95a3128b0cf9f3366adc2f9315eccf9443e2c22c",
+      "bytes": 94
+    },
+    {
+      "path": "context/.env.example",
+      "sha256": "a405a7c5e7592147f31eb5be5023d47bd2db2d9453524d3db4281305f5d7a983",
+      "bytes": 547
+    },
+    {
+      "path": "context/Dockerfile",
+      "sha256": "af8a9acb35eda02139d1e3f896b700fc12902a663288cc6ae773da3484029e79",
+      "bytes": 409
+    },
+    {
+      "path": "context/README.md",
+      "sha256": "fec627920b7d5e6fc1dedd79de42f49a70b09853ca6b0b268fb82319e954e843",
+      "bytes": 6900
+    },
+    {
+      "path": "context/agents_adapter.py",
+      "sha256": "911f3b484f84903052d308fa58baaf167a7e19c140377d8484d8f3c834e41b66",
+      "bytes": 2490
+    },
+    {
+      "path": "context/app.py",
+      "sha256": "b4c67e57711b671565097ac3648218faa2f41f98475d79b595974ea7022d366b",
+      "bytes": 4222
+    },
+    {
+      "path": "context/config.py",
+      "sha256": "9259c28b7e14d069a912e289d33cac6d014f612b730ddefe637a77d3138e29ed",
+      "bytes": 2323
+    },
+    {
+      "path": "context/context.py",
+      "sha256": "54fad904d9090ddec6c2701931fa685f628d2f65a1e8466a54e76d5b7cccb671",
+      "bytes": 3442
+    },
+    {
+      "path": "context/data/approved-profile.schema.json",
+      "sha256": "bea664344b6ec01dacf529a5403628c9be2fc97b15fabd7503bdfed02c1cab6d",
+      "bytes": 799
+    },
+    {
+      "path": "context/data/evaluation/professional-questions.jsonl",
+      "sha256": "776721a08fabc2e006a5c5a2e86771342fa54c00b26b61f7b4d1524a35c73f1f",
+      "bytes": 3352
+    },
+    {
+      "path": "context/docs/architecture.md",
+      "sha256": "0ba84c502fb11375bcf8bfb1dff25e98eb32873f1357d8e9484f39ab35fdcebc",
+      "bytes": 1719
+    },
+    {
+      "path": "context/docs/deploy.md",
+      "sha256": "7544928d99f52d522f33d406ad7058eacf0173d6137631670f72cb548d9afd92",
+      "bytes": 3285
+    },
+    {
+      "path": "context/docs/evaluation-rubric.md",
+      "sha256": "17473c4d3937a2a927fe1388f4ff1f9e8fd33f2b80e3a2fb79b6cdbc58a3cded",
+      "bytes": 1755
+    },
+    {
+      "path": "context/docs/ingestion.md",
+      "sha256": "a584a1da76fbeb8b87094ae7fd94b5ee3f63660bbdf59b9456a0eeb7c536a60f",
+      "bytes": 5168
+    },
+    {
+      "path": "context/docs/project-charter.md",
+      "sha256": "ea7dd249a1816b02de455bd112b7ae7581c1944914ac4c8b1e5d224ee9e5d1d7",
+      "bytes": 2917
+    },
+    {
+      "path": "context/docs/status-events.md",
+      "sha256": "d1d45ef8430a716978ff69ee7c39df41edcb4470280d6a4dec5998d8d32621b5",
+      "bytes": 724
+    },
+    {
+      "path": "context/evaluate.py",
+      "sha256": "bd5d31905b724ad8452645dd284d9365b45c8df0783626e7a1ab0cf077119911",
+      "bytes": 4837
+    },
+    {
+      "path": "context/fixtures/document-provenance.json",
+      "sha256": "0715f96f7bedc1eb4c0d7404c5dfb5604c27c51b94313645721faded2a411746",
+      "bytes": 1211
+    },
+    {
+      "path": "context/fixtures/generated/document-provenance.json",
+      "sha256": "0b24fc72c3a8e8c8dde347d79044d0f60402119b4d2ddc9a281efbae6c1de2f0",
+      "bytes": 1311
+    },
+    {
+      "path": "context/fixtures/generated/source-adoption-receipt-v1.json",
+      "sha256": "45186fd08ff25d8f38b28523ebab9e98433e6ccb819d7e6b54d6f41a8c7e3307",
+      "bytes": 6406
+    },
+    {
+      "path": "context/fixtures/generated/synthetic-portfolio.pdf",
+      "sha256": "ad562d3c3264e97cd51fcde62cc0aca3e388696b5b1f0eff456f39e01b2fcd7f",
+      "bytes": 23683
+    },
+    {
+      "path": "context/fixtures/generated/synthetic-resume.pdf",
+      "sha256": "50158dc52b680e54ea4c1db5909644268c022eabc955b5ee07cb86e4bbb27544",
+      "bytes": 23518
+    },
+    {
+      "path": "context/fixtures/portfolio-source.txt",
+      "sha256": "c43f8021727325e6a3c1d9cf57b73a8c247f8c979016ca9a8b6a3aa7c9f3fdea",
+      "bytes": 1120
+    },
+    {
+      "path": "context/fixtures/profile.json",
+      "sha256": "69acd3fbed57215069314ca5b1d6de087dff4e3dd1e837ca1701668f87b80303",
+      "bytes": 791
+    },
+    {
+      "path": "context/fixtures/resume-source.txt",
+      "sha256": "4c0a84e99373467e8fc4e35ca454041aaea680857d9dd5e9b21dc97f27c47131",
+      "bytes": 778
+    },
+    {
+      "path": "context/fixtures/synthetic-resume.pdf",
+      "sha256": "4927b8eae4dea95165c052ac7a4cbf5db935dba4d3068b65798f4625e3af8c20",
+      "bytes": 648
+    },
+    {
+      "path": "context/health.py",
+      "sha256": "1b3ee700269fab1c999b0a6858322148fa1c3d6bb4d7f07a0adc7e1251ccea10",
+      "bytes": 1383
+    },
+    {
+      "path": "context/maintenance.py",
+      "sha256": "1bc13adec187f60321d62cd1756bd968c7fd69c67ebc82fb80b592f0f5d74d2e",
+      "bytes": 793
+    },
+    {
+      "path": "context/make_pdf_fixture.py",
+      "sha256": "cbac6119a11009efaaf4a4b81d60a9c0bbf0f827b96d4db1ce7c4eff44f94a8c",
+      "bytes": 5575
+    },
+    {
+      "path": "context/notifications.py",
+      "sha256": "9bf722691723d3147161a8e559fbdb21eb81b3d10368423b40fda65df87ebbdb",
+      "bytes": 1064
+    },
+    {
+      "path": "context/pdf_ingest.py",
+      "sha256": "5bf5a93d184fb57426431b934c735a50bc58f11b6e8c150f02ac21424f8d7e52",
+      "bytes": 6360
+    },
+    {
+      "path": "context/prompts.py",
+      "sha256": "ab31691567f67146868e48eaea4b8877df731fb356a2357f032d45251556b59d",
+      "bytes": 1353
+    },
+    {
+      "path": "context/pyproject.toml",
+      "sha256": "91aa41ed50b575c24a3922296e0d04935a6ca9e9193c9aa795c329f47ae4f8f4",
+      "bytes": 563
+    },
+    {
+      "path": "context/requirements-optional.txt",
+      "sha256": "d1034d713d24c87e0ee6a020d2a0924abbf2f61300e74d5cbd1c7b922afbf158",
+      "bytes": 79
+    },
+    {
+      "path": "context/service.py",
+      "sha256": "8bb660f76dc0c88bf93f12a934e59873186e99af7b9c4024b1041000d9f488ec",
+      "bytes": 4861
+    },
+    {
+      "path": "context/status.py",
+      "sha256": "6031ad5ac0c560a566ed128766212870460c4ae67a1ed1abefe260f3cd2cda0a",
+      "bytes": 1133
+    },
+    {
+      "path": "context/storage.py",
+      "sha256": "f45edd80000e55f2a4e4fddea9e145d4a500afabb8eb8428d8bb53c003d30db3",
+      "bytes": 4928
+    },
+    {
+      "path": "context/tools.py",
+      "sha256": "13da4d2a48bb69bb5e8bdc477821c7cc0e3a99b927d9d578dfdd72b9ff172a20",
+      "bytes": 11414
+    },
+    {
+      "path": "context/twin.py",
+      "sha256": "d5b473cbbc3356c57f6abed0bdad31bdf51f2a8af2837bc06fdc378d9bb750c8",
+      "bytes": 3813
+    },
+    {
+      "path": "context/twin_data/__init__.py",
+      "sha256": "5b528008ab9aa97083043244b7b2462be1f44500449683a6b2bd1a13ad22d004",
+      "bytes": 71
+    },
+    {
+      "path": "context/twin_data/professional-questions.jsonl",
+      "sha256": "776721a08fabc2e006a5c5a2e86771342fa54c00b26b61f7b4d1524a35c73f1f",
+      "bytes": 3352
+    },
+    {
+      "path": "context/twin_data/profile.json",
+      "sha256": "69acd3fbed57215069314ca5b1d6de087dff4e3dd1e837ca1701668f87b80303",
+      "bytes": 791
+    },
+    {
+      "path": "context/workflow.py",
+      "sha256": "5f6cc19106e916ca5de5c83267cfe8500b206255e9f2bdff9d062548b21f0766",
+      "bytes": 1941
+    }
+  ],
+  "projectId": "cmwf84vpf003d5c8ck3i8rizl",
+  "sourceSha256": "eac05b1c75bb204f8cf78d3f27536327bdcf546dc146f5682be12d33a18711d4",
+  "ordinals": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "prior65SelectedPreserved": true,
+  "tenPublicHTTPSHoldsPreserved": [
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+  ],
+  "providerCallsAllowed": 0,
+  "publicHTTPSOrigin": null,
+  "baseImageFromUnchangedDockerfile": "python:3.12-slim",
+  "noSecretsOrPrivateInputs": true
+}
